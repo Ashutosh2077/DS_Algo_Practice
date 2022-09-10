@@ -23,9 +23,9 @@ void OptimizedBubbleSort(int size, int arr[])
 
 void BubbleSort(int size, int arr[])
 {
-    for (int i = 0; i < size; i++)
+    for (int i = 1; i < size; i++)
     {
-        for (int j = 0; j < size - 1; j++)
+        for (int j = 0; j < size - i; j++)
         {
             if (arr[j] > arr[j + 1])
                 swap(arr[j], arr[j + 1]);
